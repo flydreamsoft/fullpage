@@ -1,0 +1,2 @@
+# fullpage
+全屏
