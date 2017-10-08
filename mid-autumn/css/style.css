@@ -1,0 +1,348 @@
+html{
+	font-size: calc(100vw/7.5);
+}
+body{
+	margin: 0;padding: 0;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.section{
+				background-image: url(../img/bg.png);
+				background-size: cover;
+				overflow: hidden;
+				width: 7.5rem;
+				
+				
+				
+			}
+
+			
+img{
+	position: absolute;
+}
+#mp3{display: none;}
+.yinyue{ width: 0.7rem; height: 0.7rem;  z-index: 99; border-radius: 50%; left: 85%; top:5%; 	-webkit-animation: image-rotate 3s linear infinite; -webkit-animation-play-state: paused;}
+@-webkit-keyframes image-rotate{
+			from{
+				-webkit-transform:rotate(0deg);
+			}
+			to{
+				-webkit-transform:rotate(359deg);
+			}
+		}
+
+
+.girl-right{
+	bottom: 0%;
+	width: 100%;
+	left:100%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .girl-right{
+	left: 0%;
+	bottom: 0%;
+	-webkit-transition: left 1s linear 1s;
+}
+.girl-left{
+	bottom: 15%;
+	width: 40%;
+	left: -100%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .girl-left{
+	left: 0%;
+	-webkit-transition: left 0.8s linear 1s;
+}
+
+.foot-left{
+	bottom: 10%;
+	width: 50%;
+	left: -100%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .foot-left{
+	left: 0%;
+	-webkit-transition: left 0.5s linear 1s;
+}
+
+	
+.flower-right{
+	bottom: 6%;
+	width: 30%;
+	left: 100%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .flower-right{
+	left: 73%;
+	-webkit-transition: left 0.9s linear 1s;
+}
+
+.flower-small{
+	bottom: 35%;
+	width: 40%;
+	left:120%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .flower-small{
+	left: 71%;
+	-webkit-transition: left 1.5s linear 1s;
+}
+
+.home{
+	top: 100%;
+	width: 130%;
+	-webkit-transition: top 0.4s linear;
+}
+
+.active .home{
+	top:1%;
+	left: -15%;
+	-webkit-transition: top 2s ease 1s;
+	-webkit-animation: home-action 2s ease 1s;
+}
+
+@-webkit-keyframes home-action{
+	0%{ opacity: 0}
+	20%{opacity: 0}
+	100%{opacity: 1}
+}
+
+.road{
+	
+	top:-10%;
+	width: 25%;
+	-webkit-transition: top 0.4s linear;
+	
+}
+
+ .active .road{
+	top:43%;
+	left: 37%;
+	-webkit-animation: road-action 2s ease 1s;
+	-webkit-transition: top 4s ease 1s;
+	
+}
+@-webkit-keyframes road-action{
+	0%{ opacity: 0}
+	50%{opacity: 0}
+	100%{opacity: 1}
+}
+
+
+.lz{
+	left: -100%;
+	width: 25%;
+	-webkit-transition: top 0.4s linear;
+}
+
+.active .lz{
+	top:30%;
+	left: 14%;
+	-webkit-transition: left 3s ease 1s;
+	
+}
+.gq{
+	left: 100%;
+	width: 45%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .gq{
+	top:25%;
+	left: 40%;
+	-webkit-transition: left 3s ease 1s;
+	
+}
+.zq{
+	left: 200%;
+	width: 40%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .zq{
+	top:12%;
+	left: 35%;
+	-webkit-transition: left 3s ease 1s;
+	
+}
+.qm{
+	left: -100%;
+	width: 25%;
+	-webkit-transition: left 0.4s linear;
+}
+
+.active .qm{
+	top:17%;
+	left: 10%;
+	-webkit-transition: left 3s ease 1s;
+	
+}
+
+
+
+/******************************************page1 end*****************************************************************/
+
+/******************************************page2 start*****************************************************************/
+.moon2{ top:-20%; left: 60%;}
+.shuzhi{ left: 70%; top:-20%; -webkit-transition: top 0.4s linear; }
+.active .shuzhi{ left: 70%; top:-2%; -webkit-transition: top 1s ease 1s;}
+
+p.text1{ left: 8%; top:-100%; -webkit-transition: top 0.1s linear; font-size: 0.4rem;position: absolute;  color: gold;}
+.active p.text1{ left: 8%; top:3%; -webkit-animation: p-action 2s 0s ease-in; }
+.active p.text2{ left:30%; top:32%; -webkit-animation: p-action 2.2s 0s ease-in;}
+.active p.text3{ left:15%; top:60%;  line-height:0.4rem; -webkit-animation: p-action 2.4s 0s ease-in; text-align: center; width: 70%;}
+@-webkit-keyframes p-action{
+	0%{-webkit-transform: scale(0);}
+	100%{ -webkit-transform: scale(1);}
+}
+.active .word1{ left: 4%; top:5%; width: 60%; height: 6%;-webkit-animation: word1-action 2s 0s linear; }
+@-webkit-keyframes word1-action{
+	0%{-webkit-transform: scale(0.1);}
+	60%{ -webkit-transform: scale(1);}
+	70%{ -webkit-transform: scale(0.8);}
+	80%{ -webkit-transform: scale(1);}
+	90%{ -webkit-transform: scale(0.8);}
+	100%{ -webkit-transform: scale(1);}
+}
+
+.active .word2{; left: 15%; top:32%; width: 70%; -webkit-animation: word2-action 1.8s 0s ease;}
+@-webkit-keyframes word2-action{
+	0%{-webkit-transform: scale(2);}
+	100%{ -webkit-transform: scale(1);}
+}
+.active .word3{; left: 15%; top:60%; width: 70%; height: 10%; -webkit-animation: word3-action 2s 0s ease;}
+
+@-webkit-keyframes word3-action{
+	0%{-webkit-transform: scale(2);}
+	100%{ -webkit-transform: scale(1);}
+}
+
+
+
+p.text2{ color: #FFDFC2; font-size: 0.3rem; position: absolute;}
+p.text3{ color: #FFDFC2; font-size: 0.3rem; position: absolute;}
+.zhufu{ top:-100%; left: 40%; -webkit-transition: top 0.4s linear;}
+.active .zhufu{ top:20%; left: 40%;-webkit-animation: zhufu-rotate 1.5s 0s linear; }
+@-webkit-keyframes zhufu-rotate{
+	0%{-webkit-transform: rotateX(100deg);-webkit-transform-origin:top center; }
+	100%{ -webkit-transform: rotateX(0deg);-webkit-transform-origin:top center;display: }
+}
+.yuan{ top:-100%; left: 40%; -webkit-transition: top 0.4s linear;}
+.active .yuan{ top:45%; left: 45%; -webkit-animation: yuan-rotate 1.8s 0s linear; }
+@-webkit-keyframes yuan-rotate{
+	0%{-webkit-transform: rotateX(100deg);-webkit-transform-origin:top center; }
+	100%{ -webkit-transform: rotateX(0deg);-webkit-transform-origin:top center;display: }
+}
+.cao{left:-100%; bottom: -5%; webkit-transition: left 0.4s linear;}
+.active .cao{ left:-5%; bottom: -5%; -webkit-transition: left 2s linear;}
+.desk{left:-100%; bottom: -3%; webkit-transition: left 0.4s linear;}
+.active .desk{ left:0%; bottom: 3%; -webkit-transition: left 2.5s linear;}
+.hua{left:100%; bottom: 0%; webkit-transition: left 0.4s linear;}
+.active .hua{ left:80%; bottom: 0%; -webkit-transition: left 2s linear;}
+.qilif{left:100%; bottom: 15%; webkit-transition: left 0.4s linear;}
+.active .qilif{ left:78%; bottom: 15%; -webkit-transition: left 1s linear;}
+
+
+/******************************************page2 end**********/
+/******************************************page3start*************************************/
+
+.qiang{ width:100%; left:0%; bottom: -100%; webkit-transition: bottom 0.4s linear;}
+.active .qiang{ left:0%; bottom: -5%; -webkit-transition: bottom 1.5s linear;}
+
+
+/******************************************page3end***************************************/
+/******************************************page4start************************************/
+
+.qilif.page4{left:200%; bottom: 15%; webkit-transition: left 0.4s linear;}
+.active .qilif.page4{ left:10%; bottom: 15%; -webkit-transition: left 1.5s linear;}
+.hua2{left:-100%; bottom: 2%; webkit-transition: left 0.4s linear;}
+.active .hua2{ left:-10%; bottom: 2%; -webkit-transition: left 1.5s linear;}
+
+.foot-right{left:100%; bottom: 0%; webkit-transition: left 0.4s linear;}
+.active .foot-right{ left:60%; bottom: 0%; -webkit-transition: left 1.5s linear;}
+
+.table{left:100%; bottom: 7%; webkit-transition: left 0.4s linear;}
+.active .table{ left:67%; bottom: 7%; -webkit-transition: left 2s linear;}
+/******************************************page4end**************************************/
+/******************************************page5start************************************/
+div{ position: absolute;}
+p.title{ font-size: 0.3rem; color: #FFDFC2; text-indent: 2em; width: 84%; left: 8%; top:15%;position: absolute; line-height: 0.4rem;}
+.active p.title{ left: 10%; top:15%; -webkit-animation: title-rotate 2s 0s linear; }
+@-webkit-keyframes title-rotate{
+	0%{-webkit-transform: rotateX(90deg);-webkit-transform-origin:top center; }
+	100%{ -webkit-transform: rotateX(0deg);-webkit-transform-origin:top center; }
+}
+.active .border-box{ width: 90%; height: 80%; left: 5%; top:15%; border: 0.15rem solid red;border-image:url(../img/Fo-i1YGkDLs8QHxZ_lqTUaY9Oth6.png) 15 15 15 15 round;box-sizing: border-box; -webkit-animation: border-box 2s 0.5s ease ;}
+
+@-webkit-keyframes border-box{
+	0%{-webkit-transform: scale(2);}
+	100%{ -webkit-transform: scale(1);}
+	
+	
+}
+
+.active .img-a{ width: 25%; left: 8%; top:30%; -webkit-animation: scale-action 2s 0.5s ease ;}
+.active .img-b{ width: 25%; left: 38%; top:30%; -webkit-animation: scale-action 2s 0.7s ease ; }
+.active .img-c{ width: 25%; left: 68%; top:30%; -webkit-animation: scale-action 2s 0.9s ease ;}
+
+@-webkit-keyframes scale-action{
+	0%{-webkit-transform: scale(0.1);}
+	60%{ -webkit-transform: scale(1);}
+	70%{ -webkit-transform: scale(0.8);}
+	80%{ -webkit-transform: scale(1);}
+	90%{ -webkit-transform: scale(0.8);}
+	100%{ -webkit-transform: scale(1);}
+}
+
+span,p{ font-size: 0.25rem; position: absolute; color: #FFDFC2;}
+span{ font-size: 0.3rem;}
+.item-1{ left: -100%; top: 45%; -webkit-transition: left 0.4s linear;}
+.item-2{ left: -100%; top: 50%; -webkit-transition: left 0.4s linear;}
+.item-3{ left: -100%; top: 55%; -webkit-transition: left 0.4s linear;}
+.item-4{ left: -100%; top: 60%; -webkit-transition: left 0.4s linear;}
+.active .item-1{ left: 32%; top: 45%; -webkit-transition: left 2s 0s linear;}
+.active .item-2{ left: 32%; top: 50%; -webkit-transition: left 2s 0.2s linear;}
+.active .item-3{ left: 32%; top: 55%; -webkit-transition: left 2s 0.4s linear;}
+.active .item-4{ left: 32%; top: 60%; -webkit-transition: left 2s 0.6s linear;}
+
+.demo-1{ left: 100%; top: 46.5%; -webkit-transition: left 0.4s linear;}
+.demo-2{ left: 100%; top: 51.5%; -webkit-transition: left 0.4s linear;}
+.demo-3{ left: 100%; top: 56.5%; -webkit-transition: left 0.4s linear;}
+.demo-4{ left: 100%; top: 61.5%; -webkit-transition: left 0.4s linear;}
+.active .demo-1{ left: 10%; top: 46.5%; -webkit-transition: left 2s 0s linear;}
+.active .demo-2{ left: 10%; top: 51.5%; -webkit-transition: left 2s 0.2s linear;}
+.active .demo-3{ left: 10%; top: 56.5%; -webkit-transition: left 2s 0.4s linear;}
+.active .demo-4{ left: 10%; top: 61.5%; -webkit-transition: left 2s 0.6s linear;}
+
+.hua-page5{left:100%; bottom: 7%; webkit-transition: left 0.4s linear;}
+.active .hua-page5{ width: 50%; height: 10%; left:50%; bottom: 0%; -webkit-transition: left 2s linear;}
+
+.wan{left:100%; bottom: 3%; webkit-transition: left 0.4s linear;}
+.active .wan{  left:75%; bottom: 3%; -webkit-transition: left 3s linear;}
+/******************************************page5end******************************/
+/******************************************page6 start******************************/
+
+
+
+.active .yuebing{ width: 80%; left: 10%; top:35%; -webkit-transition: left 0.4s linear; -webkit-animation: yuebing 2s 0.9s ease ;}
+@-webkit-keyframes yuebing{
+	0%{-webkit-transform: scale(0);}
+	100%{ -webkit-transform: scale(1);}
+}
+
+
+
+
+
+
+
+/******************************************page6end******************************/
